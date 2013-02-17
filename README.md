@@ -1,5 +1,4 @@
 
-
 Библиотека для эмитации ActiveRecord при работе с фаиловыми хранилищами.
 
 Тестовое приложение
@@ -104,6 +103,11 @@ account.save
 ```ruby
 User.where(name: 'max').order('id desc').limit(3).all
 ```
+Также возможно использовать find_by_* метод с динамически формируемыми аргументами.
+```ruby
+User.find_by_name('max')
+```
+
 
 Зависимости/DEPENDENCIES
 ======
